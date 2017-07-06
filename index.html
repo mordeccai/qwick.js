@@ -1,0 +1,47 @@
+<html>
+<head>
+<title>
+New Quick.js
+</title>
+<script src='quick/quick.js'>
+</script>
+<script>
+quick.include('fs')
+quick.importStyle()
+quick.main(()=>{
+fs.open('Jsus.txt','r',function(res){
+	document.getElementById('hour-hand').innerHTML= res;
+})
+})
+</script>
+</head>
+<body >
+<div class='clock'>
+	<div onclick='onpr()'>
+	onpr
+	</div>
+	<div id='hour-hand' class='hour-hand'>
+	
+	</div>
+	<div id='second-hand' class='second-hand'>
+	
+	</div>
+</div>
+<script type='text/html'>
+	<div class='clock'>
+	<div onclick='onpr()'>
+	</div>
+	<div id='hour-hand' class='hour-hand'>
+	
+	</div>
+	<div id='second-hand' class='second-hand'>
+	
+	</div>
+</div>
+</script>
+</body>
+<script>
+
+
+</script>
+</html>
